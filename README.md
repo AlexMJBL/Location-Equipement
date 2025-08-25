@@ -19,6 +19,5 @@ Application de location d’équipements avec API .NET Core et frontend Angular.
 ## 🛠️ Technologies utilisées
 - **Backend** : ASP.NET Core, Entity Framework Core, SQL Server  
 - **Frontend** : Angular, TypeScript, ngx-toastr  
-- **Base de données** : SQL Server (ou SQLite pour tests)  
-
+- **Base de données** : SQLite
 ---
