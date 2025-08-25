@@ -1,0 +1,59 @@
+[
+  {
+    "ContainingType": "LocationEquipementApi.Controllers.EquipementController",
+    "Method": "AnnulerLocation",
+    "RelativePath": "api/Equipement/AnnulerLocation/{locationId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "locationId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LocationEquipementApi.Controllers.EquipementController",
+    "Method": "Get",
+    "RelativePath": "api/Equipement/Get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[LocationEquipementApi.Entites.Equipement, LocationEquipementApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "LocationEquipementApi.Controllers.EquipementController",
+    "Method": "LouerEquipement",
+    "RelativePath": "api/Equipement/LouerEquipement/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "location",
+        "Type": "LocationEquipementApi.Dtos.DemandeLocationDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

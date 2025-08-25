@@ -1,0 +1,13 @@
+<div>
+    <header>
+        <h1>Location d'Équipements</h1>
+    </header>
+    
+    <div id="card-container">
+        @for(eq of equipements; track eq.equipementId){
+        <equipement-card [equipement]="eq" (updated)="getLocationEquipement()">
+        </equipement-card>
+    }
+    </div>
+
+</div>

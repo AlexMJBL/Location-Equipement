@@ -1,0 +1,20 @@
+<div id="card">
+    <h2>{{equipement.nom}}</h2>
+    <p>{{equipement.description}}</p>
+
+    @if(equipement.actif){<div>
+    
+        <p>Non Disponible</p>
+        <p>Reserve du {{equipement.dateDe}} a {{equipement.dateA}}</p>
+        <button class="button-annulation" (click)="annulerLocation(equipement.equipementId)">Annuler</button>
+    </div>}
+    @else { 
+    <div>
+            <p>Reserver pour:</p>
+            <button class="button-location" (click)="louerEquipement(equipement.equipementId,1)">1 Jour</button>
+            <button class="button-location" (click)="louerEquipement(equipement.equipementId,3)">3 Jour</button>
+            <button class="button-location" (click)="louerEquipement(equipement.equipementId,5)">5 Jour</button> 
+            <button class="button-location" (click)="louerEquipement(equipement.equipementId,7)">7 Jour</button>
+    </div>
+}
+</div>
